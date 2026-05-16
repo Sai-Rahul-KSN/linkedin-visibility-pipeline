@@ -1,0 +1,36 @@
+{
+  "name": "weekly-summary",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "0 21 * * 0" }
+          ]
+        }
+      },
+      "id": "trigger-cron",
+      "name": "Sunday 9pm",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "command": "/Users/sairahulkodipallysrinivasanava/Desktop/linkedin-visibility/scripts/run-weekly-summary.sh"
+      },
+      "id": "run",
+      "name": "Run run-weekly-summary.sh",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [480, 300]
+    }
+  ],
+  "connections": {
+    "Sunday 9pm": {
+      "main": [[{ "node": "Run run-weekly-summary.sh", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" }
+}

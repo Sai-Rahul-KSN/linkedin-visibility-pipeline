@@ -1,0 +1,18 @@
+Write a complete Python script using matplotlib that renders the chart described below as a PNG.
+
+Constraints:
+- Script must be self-contained and runnable with `python3 <script.py>`.
+- Save the output to the path provided in the environment variable OUTPUT_PATH (use os.environ["OUTPUT_PATH"]).
+- Image size: 1200 x 630 pixels at 100 dpi (figsize=(12, 6.3), dpi=100).
+- Style: minimal, high-contrast, large readable labels, no chart junk, no gridlines unless they aid reading, no 3D effects.
+- Do not use seaborn or any non-matplotlib styling library unless plotly is explicitly named in the chart description.
+- Do not include `plt.show()`. End with `plt.savefig(os.environ["OUTPUT_PATH"], bbox_inches="tight", dpi=100)`.
+- If the chart requires data, fabricate plausible illustrative numbers that match the description's intent. Mark fabricated data in a small footnote on the chart.
+
+Chart description:
+{{CHART_DESCRIPTION}}
+
+Post text (for context — the chart should reinforce the post's point):
+{{POST_TEXT}}
+
+Return JSON matching the schema: { "python_script": "..." }. No prose around the JSON. No markdown fences inside the script value.

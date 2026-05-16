@@ -1,0 +1,48 @@
+You are evaluating one LinkedIn draft candidate against a fixed rubric.
+
+Voice profile (the writer is supposed to sound like this person):
+{{VOICE_PROFILE}}
+
+Style guide (the draft is supposed to follow this):
+{{STYLE_GUIDE}}
+
+Draft to evaluate:
+{{CANDIDATE_POST_TEXT}}
+
+Source item the draft is based on:
+{{SOURCE_ITEM_JSON}}
+
+Score the draft on each rubric item (1–5, integers):
+- hook_strength: would the first ~210 chars earn a tap on mobile?
+- voice_match: does it sound like the person described in the voice profile?
+- has_real_take: is there a genuine opinion, or is it descriptive mush?
+- style_guide_adherence: does it follow the style guide?
+- specificity: are there concrete numbers, tools, named situations?
+
+Then:
+- ai_isms_detected: list every AI-ism, buzzword, or "do not say" phrase you find. Empty array if none.
+- style_violations: list each rule from the style guide that the draft breaks. Empty array if none.
+- specific_improvement_notes: concrete, actionable changes — not vague advice.
+- verdict: one of publish_as_is | revise | discard.
+- verdict_reason: one sentence.
+
+Be harsh. Default toward revise. Only mark publish_as_is if you would genuinely send this from your own account.
+
+Return JSON matching this exact shape (note `scores` is a NESTED object):
+
+{
+  "scores": {
+    "hook_strength": <1-5>,
+    "voice_match": <1-5>,
+    "has_real_take": <1-5>,
+    "style_guide_adherence": <1-5>,
+    "specificity": <1-5>
+  },
+  "ai_isms_detected": [...],
+  "style_violations": [...],
+  "specific_improvement_notes": [...],
+  "verdict": "publish_as_is" | "revise" | "discard",
+  "verdict_reason": "..."
+}
+
+No prose around the JSON. No markdown fences.

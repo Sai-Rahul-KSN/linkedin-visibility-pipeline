@@ -1,0 +1,36 @@
+{
+  "name": "poll-comment-inbox",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "0 * * * *" }
+          ]
+        }
+      },
+      "id": "trigger-cron",
+      "name": "Hourly",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "command": "/Users/sairahulkodipallysrinivasanava/Desktop/linkedin-visibility/scripts/poll-comment-inbox.sh"
+      },
+      "id": "run-poll",
+      "name": "Run poll-comment-inbox.sh",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [480, 300]
+    }
+  ],
+  "connections": {
+    "Hourly": {
+      "main": [[{ "node": "Run poll-comment-inbox.sh", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" }
+}

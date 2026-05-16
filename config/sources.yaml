@@ -1,0 +1,18 @@
+# RSS feeds the daily ingest job pulls from.
+# Verify each at setup. Log and alert on dead feeds.
+
+data_engineering:
+  - https://www.kdnuggets.com/tag/data-engineering/feed
+  - https://joereis.substack.com/feed
+  - https://www.datafold.com/blog/rss.xml
+  - https://duckdb.org/news/rss.xml
+  - https://iceberg.apache.org/blog/feed.xml
+
+geospatial:
+  - https://cloudnativegeo.org/feed.xml
+  - https://parquet.apache.org/blog/feed.xml
+  - https://www.cogeo.org/feed.xml
+  - https://overturemaps.org/feed.xml
+
+stack_news:
+  - https://news.ycombinator.com/rss

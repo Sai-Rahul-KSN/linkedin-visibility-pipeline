@@ -1,0 +1,36 @@
+{
+  "name": "ingest-feeds",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "0 6 * * *" }
+          ]
+        }
+      },
+      "id": "trigger-cron",
+      "name": "Daily 6am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "command": "/Users/sairahulkodipallysrinivasanava/Desktop/linkedin-visibility/scripts/ingest-feeds.sh"
+      },
+      "id": "run-ingest",
+      "name": "Run ingest-feeds.sh",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [480, 300]
+    }
+  ],
+  "connections": {
+    "Daily 6am": {
+      "main": [[{ "node": "Run ingest-feeds.sh", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" }
+}

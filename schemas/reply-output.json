@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "suggested_reply":      { "type": "string" },
+    "no_reply_recommended": { "type": "boolean" },
+    "reason":               { "type": "string" }
+  },
+  "required": ["suggested_reply", "no_reply_recommended"]
+}

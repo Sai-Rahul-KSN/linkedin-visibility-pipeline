@@ -1,0 +1,35 @@
+{
+  "name": "approve-draft",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "approve-draft",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "Webhook: approve-draft",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "webhookId": "approve-draft"
+    },
+    {
+      "parameters": {
+        "command": "=/Users/sairahulkodipallysrinivasanava/Desktop/linkedin-visibility/scripts/approve-draft.sh {{$json.body.final_draft_id}} {{$json.body.decision}} \"{{$json.body.user_edit}}\""
+      },
+      "id": "run",
+      "name": "Run approve-draft.sh",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [480, 300]
+    }
+  ],
+  "connections": {
+    "Webhook: approve-draft": {
+      "main": [[{ "node": "Run approve-draft.sh", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" }
+}

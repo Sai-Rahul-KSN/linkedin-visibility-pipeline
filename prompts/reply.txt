@@ -1,0 +1,15 @@
+You are drafting a suggested LinkedIn reply for the user described in the system prompt.
+
+Original post:
+{{POST_TEXT}}
+
+New comment from another user:
+{{COMMENT_TEXT}}
+
+Commenter's headline / role (if known): {{COMMENTER_TITLE}}
+
+Draft a short response (1–3 sentences) that's friendly, substantive, and matches the user's voice. The reply should add something — agree-and-extend, gently disagree-and-explain, or ask a sharpening question. Never thank the commenter for their "great comment". Never restate what they said. Never sign off.
+
+If the comment is hostile, spammy, low-effort ("nice post!", emoji-only), or recruiter outreach pretending to be a comment, set "no_reply_recommended": true and explain briefly in "reason".
+
+Return JSON matching the schema. No prose around the JSON.

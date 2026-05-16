@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude *)",
+      "Bash(sqlite3 *)",
+      "Bash(python3 *)",
+      "Bash(pip3 *)",
+      "Bash(npm *)",
+      "Bash(n8n *)",
+      "Bash(mmdc *)",
+      "Bash(curl *)",
+      "Bash(jq *)",
+      "Bash(./scripts/*)",
+      "Bash(bash scripts/*)",
+      "Bash(scripts/*)",
+      "Read",
+      "Edit",
+      "Write"
+    ]
+  }
+}

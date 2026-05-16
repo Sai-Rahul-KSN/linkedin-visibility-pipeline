@@ -1,0 +1,14 @@
+You are summarizing the user's LinkedIn performance for the week.
+
+Posts this week with metrics:
+{{POSTS_JSON}}
+
+Baseline (prior 4-week median per metric):
+{{BASELINE_JSON}}
+
+Produce:
+1. Which post performed best and the most plausible reason (topic, hook, timing, format).
+2. Which underperformed and the most plausible reason.
+3. One concrete adjustment to try next week. Be specific — name the change.
+
+Keep it under 250 words. Plain text. No headers, no markdown, no emoji.

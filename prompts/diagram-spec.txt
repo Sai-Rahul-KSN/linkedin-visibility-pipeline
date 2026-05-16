@@ -1,0 +1,16 @@
+Write a Mermaid diagram spec for the diagram described below.
+
+Constraints:
+- Mermaid v10+ syntax.
+- Output the spec only — no ```mermaid fences.
+- Prefer flowchart LR or graph TD unless the description clearly calls for a sequence/state/ER diagram.
+- Keep node labels short (under 6 words each).
+- No more than 12 nodes total.
+
+Diagram description:
+{{DIAGRAM_DESCRIPTION}}
+
+Post text (for context):
+{{POST_TEXT}}
+
+Return JSON matching the schema: { "mermaid_spec": "..." }. No prose around the JSON.

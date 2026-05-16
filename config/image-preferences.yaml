@@ -1,0 +1,25 @@
+# Image generation preferences for the per-draft visual step.
+
+default_visual_types_allowed:
+  - chart
+  - diagram
+  - screenshot_suggestion
+  - ai_image
+  - none
+
+ai_images:
+  enabled: true                # opted in
+  provider: pollinations
+  pollinations_model: flux     # flux | gpt-image | seedream
+  size: "1200x630"             # LinkedIn-friendly aspect (1.91:1)
+
+chart:
+  python_libs: ["matplotlib", "plotly"]
+  width: 1200
+  height: 630
+  style: "minimal, high-contrast, LinkedIn-friendly, no chart junk, large readable labels"
+
+diagram:
+  renderer: mermaid
+  theme: neutral
+  background: transparent

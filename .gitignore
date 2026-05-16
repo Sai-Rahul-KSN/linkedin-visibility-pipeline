@@ -1,0 +1,13 @@
+.env
+data/visibility.sqlite
+data/visibility.sqlite-journal
+data/visibility.sqlite-wal
+data/visibility.sqlite-shm
+data/images/*
+!data/images/.gitkeep
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+/tmp/
+*.log

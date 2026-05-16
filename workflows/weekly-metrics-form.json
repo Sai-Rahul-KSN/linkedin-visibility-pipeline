@@ -1,0 +1,36 @@
+{
+  "name": "weekly-metrics-form",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "0 19 * * 0" }
+          ]
+        }
+      },
+      "id": "trigger-cron",
+      "name": "Sunday 7pm",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "command": "/Users/sairahulkodipallysrinivasanava/Desktop/linkedin-visibility/scripts/weekly-metrics-form.sh"
+      },
+      "id": "run",
+      "name": "Run weekly-metrics-form.sh",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [480, 300]
+    }
+  ],
+  "connections": {
+    "Sunday 7pm": {
+      "main": [[{ "node": "Run weekly-metrics-form.sh", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" }
+}

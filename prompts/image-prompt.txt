@@ -1,0 +1,17 @@
+Refine the visual description below into a single image-generation prompt suitable for Pollinations (flux model).
+
+Constraints:
+- One paragraph, 30–80 words.
+- No copyrighted characters, no real people, no logos.
+- Aim for an image that complements a LinkedIn post about data engineering / geospatial work.
+- Prefer abstract, conceptual, or diagrammatic styles. Avoid stock-photo clichés (people in suits shaking hands, glowing brain, lightbulb).
+- Include style hints (e.g. "minimal vector illustration", "isometric technical diagram", "soft gradient background").
+- Aspect ratio 1.91:1 (1200x630) — the prompt will be rendered at that size, but you can mention "wide landscape composition".
+
+Visual description from the writer:
+{{VISUAL_DESCRIPTION}}
+
+Post text (for context):
+{{POST_TEXT}}
+
+Return JSON matching the schema: { "image_prompt": "..." }. No prose around the JSON.

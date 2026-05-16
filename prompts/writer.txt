@@ -1,0 +1,19 @@
+You are the writer in a 3-stage drafting pipeline (writer → critic → reviser). Your job: produce 2 candidate LinkedIn posts based on the items below.
+
+Style guide (follow precisely):
+{{STYLE_GUIDE}}
+
+Recent posts to avoid repeating (topic + angle):
+{{RECENT_POSTS_JSON}}
+
+Ingest items to draw from (pick any one for each candidate; the two candidates may use the same item or different ones):
+{{INGEST_ITEMS_JSON}}
+
+Requirements for each candidate:
+- Follow the style guide for length (800–1500 chars), structure, hook, and formatting.
+- Use the user's voice as defined in the system prompt. If the system prompt has placeholders like "<...>", treat them as unfilled and DO NOT invent specific personal experience to fill them.
+- Mark any line where the user's actual opinion needs to fill in as [USER TAKE: <one-line description of the take they should make>].
+- Do not fabricate personal experience, specific projects, specific employers, specific numbers, or specific war stories.
+- Suggest a visual: chart, diagram, screenshot_suggestion, ai_image, or none. Default to chart or diagram for technical posts.
+
+Return exactly two candidates matching the JSON schema. No prose around the JSON.
