@@ -52,3 +52,32 @@ The writer and critic both read this. Treat every rule as load-bearing.
 - Ends with "Thoughts?" or "Let me know what you think!" (lazy CTA).
 - Uses more than 3 hashtags.
 - Contains an emoji used as decoration (not part of a quoted thing).
+
+## Banned patterns (extended)
+
+> Adapted from the `article-writing` skill in
+> [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) (MIT).
+
+Delete and rewrite any of these:
+
+- "In today's rapidly evolving landscape" and all variants
+- "game-changer", "cutting-edge", "revolutionary", "paradigm shift"
+- "here's why this matters" used as a standalone bridge line
+- "Not X, just Y" framing (overused on LinkedIn)
+- Fake vulnerability arcs ("I used to think X, then I learned Y")
+- A closing question added only to juice engagement (engagement bait)
+- Biography padding that does not move the argument
+- Generic AI throat-clearing that delays the point
+- Forced lowercase aesthetic
+- "no fluff" / "no BS" as a self-aware tag
+- Capitalization stunts (Random Title Case in body text)
+
+## Core writing rules (apply to every draft)
+
+> Adapted from the `article-writing` skill (MIT, attribution above).
+
+1. **Lead with the concrete thing.** Artifact, example, number, named situation, screenshot — not setup.
+2. **Explain after the example, not before.** The reader earns the explanation by being shown the thing first.
+3. **Proof beats adjectives.** "3-5x speedup on 100M rows" > "blazing fast". Cut every "robust", "scalable", "seamless" that isn't attached to a measurement.
+4. **One claim per post.** If there are two takes, pick the sharper one.
+5. **Never invent facts, credibility, or customer evidence.** If the writer doesn't know a number, mark it `[USER TAKE: ...]` — don't fabricate.

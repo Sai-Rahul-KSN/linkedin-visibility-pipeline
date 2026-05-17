@@ -96,3 +96,12 @@ scripts/run-writer.sh
 - No paid APIs added without your explicit approval.
 
 These are enforced by the system never holding LinkedIn credentials.
+
+## Credits
+
+Patterns from
+[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+(MIT) are incorporated into the voice profile, style guide, and writer
+prompt — see [CREDITS.md](CREDITS.md). That repo is also installed as a
+Claude Code plugin via `.claude/settings.json`, making its 230 skills
+available during development.

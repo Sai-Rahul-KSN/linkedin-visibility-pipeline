@@ -16,4 +16,33 @@ Requirements for each candidate:
 - Do not fabricate personal experience, specific projects, specific employers, specific numbers, or specific war stories.
 - Suggest a visual: chart, diagram, screenshot_suggestion, ai_image, or none. Default to chart or diagram for technical posts.
 
-Return exactly two candidates matching the JSON schema. No prose around the JSON.
+Core writing rules (every candidate must follow):
+1. Lead with the concrete thing — artifact, example, number, named situation. Not setup, not "in today's...", not throat-clearing.
+2. Explain after the example, not before.
+3. Proof beats adjectives. If a claim needs a number, include one or omit the claim. Cut every "robust"/"scalable"/"seamless" not tied to a measurement.
+4. One actual claim per post. If you have two, pick the sharper one for that candidate and use the other for the second candidate.
+5. Never invent facts, credibility, or customer evidence. Use [USER TAKE: ...] markers instead of fabricating.
+
+Return JSON matching this EXACT shape — a single top-level object with a `candidates` array containing TWO entries. Use these field names exactly (no invented fields, no renaming "suggested_visual" to "visual"):
+
+{
+  "candidates": [
+    {
+      "post_text": "<full LinkedIn post text, 800-1500 chars>",
+      "source_item_id": <integer id from the ingest items>,
+      "rationale": "<one sentence on why this angle>",
+      "suggested_visual": {
+        "type": "chart" | "diagram" | "screenshot_suggestion" | "ai_image" | "none",
+        "description": "<one sentence describing the visual>"
+      }
+    },
+    {
+      "post_text": "<second candidate, different angle>",
+      "source_item_id": <integer>,
+      "rationale": "<one sentence>",
+      "suggested_visual": { "type": "...", "description": "..." }
+    }
+  ]
+}
+
+No prose around the JSON. No markdown fences. No extra top-level fields. No invented field names.

@@ -105,3 +105,60 @@ These phrases / patterns get the draft auto-flagged by the critic:
 - Take a position. Vague is worse than wrong.
 - End with a forward-looking question or an invitation to disagree — not a CTA.
 - If a claim needs a number, include one or omit the claim.
+
+---
+
+## VOICE PROFILE (structured summary)
+
+> This block is the operational artifact downstream prompts consume. Fill it in
+> after collecting 5–20 real source posts (your own past LinkedIn / blog / DMs
+> that worked). Each line should be observable in the source set, not invented.
+>
+> Schema patterned after the `brand-voice` skill in
+> [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+> (MIT). See `CREDITS.md` for attribution.
+
+```text
+VOICE PROFILE
+=============
+Author:           <your name>
+Goal:             build visibility in data engineering + geospatial; surface to recruiters and technical peers
+Confidence:       low | medium | high     # how source-backed this profile is
+
+Source Set
+- <link or description of source post 1>
+- <link or description of source post 2>
+- <link or description of source post 3>
+
+Rhythm
+- <e.g. "Short sentences, occasional one-line paragraphs. No filler clauses.">
+
+Compression
+- <e.g. "Dense. Reader is expected to know what DuckDB is. No throat-clearing.">
+
+Capitalization
+- <conventional | mixed | situational — be specific>
+
+Parentheticals
+- <when used and when not. e.g. "Only to qualify a number or narrow scope.">
+
+Question Use
+- <rare | frequent | rhetorical | direct | absent>
+
+Claim Style
+- <how claims land: with numbers? with a named tool? with a personal observation?>
+
+Preferred Moves
+- <concrete moves you actually make: contrarian reframe, named-comparison, war story>
+
+Banned Moves
+- <patterns you never use: hashtag spam, LinkedIn thought-leader cadence, hype>
+
+CTA Rules
+- <how you close. e.g. "Forward-looking question. Never 'thoughts?' Never 'follow for more'.">
+
+Channel Notes
+- LinkedIn:  <length range, tone, formatting>
+- X:         <if cross-posting>
+- Email:     <if applicable>
+```
