@@ -97,6 +97,12 @@ scripts/run-writer.sh
 
 These are enforced by the system never holding LinkedIn credentials.
 
+## Going live
+
+See [IMPLEMENTATION.md](IMPLEMENTATION.md) for the full step-by-step
+playbook — voice profile setup using the brand-voice skill, credentials,
+n8n activation, first cycle, steady-state operation, and the kill switch.
+
 ## Credits
 
 Patterns from
