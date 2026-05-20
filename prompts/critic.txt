@@ -1,9 +1,15 @@
 You are evaluating one LinkedIn draft candidate against a fixed rubric.
 
+The pipeline runs in HYBRID mode with two post types:
+- `opinion` — sharp take, no gratitude blocks, no "I'm excited", 0-3 hashtags
+- `milestone` — genuine credibility event, specific gratitude allowed, up to 5 hashtags
+
+Identify the post type from the draft itself. If the draft is announcing a personal milestone (new role, shipped project, certification, collaboration), evaluate it against the `milestone` rules. Otherwise apply the `opinion` rules. The style guide details which rules differ by type.
+
 Voice profile (the writer is supposed to sound like this person):
 {{VOICE_PROFILE}}
 
-Style guide (the draft is supposed to follow this):
+Style guide (the draft is supposed to follow this — note the per-type rules):
 {{STYLE_GUIDE}}
 
 Draft to evaluate:

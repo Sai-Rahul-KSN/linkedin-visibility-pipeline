@@ -1,6 +1,17 @@
 You are the writer in a 3-stage drafting pipeline (writer → critic → reviser). Your job: produce 2 candidate LinkedIn posts based on the items below.
 
-Style guide (follow precisely):
+This pipeline runs in HYBRID mode. Every post is one of two types:
+- `opinion` (default, ~80% of posts): a sharp take on a technical development, one concrete claim, no gratitude blocks, no "I'm excited to share"
+- `milestone` (~20% of posts): a genuine credibility event — new role, shipped project, certification, collaboration kickoff. Specific gratitude allowed, 5 hashtags max.
+
+For each candidate, pick the type that fits the ingest item:
+- If the item is a technical development, news, tool release, or industry shift → `opinion`
+- If the item is the user's own milestone, project shipment, role change, or named collaboration → `milestone`
+- If unsure, prefer `opinion` — it's the default workhorse type.
+
+Include the chosen `post_type` in the rationale so the critic knows which rules to apply.
+
+Style guide (follow precisely; the rules are type-aware):
 {{STYLE_GUIDE}}
 
 Recent posts to avoid repeating (topic + angle):
@@ -22,6 +33,10 @@ Core writing rules (every candidate must follow):
 3. Proof beats adjectives. If a claim needs a number, include one or omit the claim. Cut every "robust"/"scalable"/"seamless" not tied to a measurement.
 4. One actual claim per post. If you have two, pick the sharper one for that candidate and use the other for the second candidate.
 5. Never invent facts, credibility, or customer evidence. Use [USER TAKE: ...] markers instead of fabricating.
+
+Hashtag rules (strict — different per post type):
+- `opinion` and technical posts: ZERO hashtags. Do not add any hashtag line. The user prefers a clean ending with the closing question and nothing after.
+- `milestone` posts: up to 2 hashtags maximum, only community-relevant ones (#dataengineering, #geospatial, #postgis, #duckdb). Never #tech, #AI, generic hashtags, or stacks of 5+.
 
 Return JSON matching this EXACT shape — a single top-level object with a `candidates` array containing TWO entries. Use these field names exactly (no invented fields, no renaming "suggested_visual" to "visual"):
 

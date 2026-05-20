@@ -2,6 +2,38 @@
 
 The writer and critic both read this. Treat every rule as load-bearing.
 
+## Post types (hybrid mode)
+
+Every post the pipeline produces is one of two types. The writer picks the type
+based on the ingest item; the critic applies the relevant rules.
+
+### `opinion` (default, ~80% of posts)
+
+A sharp take on a specific technical development, with one concrete claim and
+supporting evidence. This is the workhorse type.
+
+- Rules below apply in full.
+- Hook must be opinionated or surprising; no "I'm excited to share" openers.
+- 0–3 hashtags.
+- No gratitude blocks, no thanking named people.
+- Forward-looking question at the end, not a CTA.
+
+### `milestone` (occasional, ~20% of posts)
+
+A genuine milestone moment: new role, completed project, certification,
+collaboration kickoff, public artifact shipped. These are *credibility events*
+the audience needs to see — under-doing them is also a mistake.
+
+Relaxed rules (only these change vs. `opinion`):
+
+- Hook may open with "Some news.", "Sharing a milestone.", or similar — but NOT "I'm thrilled / honored / blessed". Excited is allowed *once*, not stacked.
+- May thank named individuals when the thanks is specific (their role + what they actually did), not generic ("my supervisor for mentoring me").
+- Up to 5 hashtags (still community-relevant; `#tech` etc. still banned).
+- Specific outcome / artifact required — what shipped, what role, what number. Vague milestones ("excited to start this journey") still fail.
+
+Everything else (no AI-isms, no hype phrases, no fabrication, one core claim,
+numbers > adjectives) applies to BOTH types.
+
 ## Length
 
 - **Target:** 800–1500 characters total (LinkedIn counts characters, not words).
@@ -45,13 +77,27 @@ The writer and critic both read this. Treat every rule as load-bearing.
 
 ## What disqualifies a draft (automatic critic failure)
 
-- Opens with "In today's...", "As a data engineer...", "I'm excited to share...", "Humbled and honored..."
+**For both post types:**
+
 - Uses any phrase from the "Do not say" list in `voice-profile.md`.
-- Has zero specific numbers, tools, or named situations.
+- Has zero specific numbers, tools, named situations, or named outcomes.
 - Reads like a vendor blog post.
+- Contains an emoji used as decoration (not part of a quoted thing).
+- Opens with "Humbled and honored", "Thrilled and blessed", "In today's fast-paced world", or any stacked-emotion opener.
+
+**For `opinion` posts specifically:**
+
+- Opens with "I'm excited to share...", "As a data engineer...", or other personal-announcement framing.
 - Ends with "Thoughts?" or "Let me know what you think!" (lazy CTA).
 - Uses more than 3 hashtags.
-- Contains an emoji used as decoration (not part of a quoted thing).
+- Includes a gratitude block thanking named people (use `milestone` type for that).
+
+**For `milestone` posts specifically:**
+
+- The milestone is vague — no specific role title, project name, artifact link, or concrete outcome.
+- Thanks named people generically ("for their support and guidance") rather than specifically (their actual role + what they actually did).
+- Uses more than 5 hashtags.
+- Has no forward-looking element — just a celebration with no next step.
 
 ## Banned patterns (extended)
 
