@@ -21,7 +21,11 @@ INGEST_ITEMS_JSON="$(sqlite_json "
     SELECT id, title, summary, link, source, fetched_at
     FROM ingest_items
     WHERE used_at IS NULL
-    ORDER BY fetched_at DESC
+      AND title NOT GLOB '*RC[0-9]*'
+      AND title NOT GLOB '*rc[0-9]*'
+      AND title NOT GLOB '*beta*'
+      AND title NOT GLOB '*alpha*'
+    ORDER BY (source = 'stack_news'), fetched_at DESC
     LIMIT 5;
 ")"
 
