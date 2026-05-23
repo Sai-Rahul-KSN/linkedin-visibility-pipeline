@@ -34,9 +34,11 @@ Core writing rules (every candidate must follow):
 4. One actual claim per post. If you have two, pick the sharper one for that candidate and use the other for the second candidate.
 5. Never invent facts, credibility, or customer evidence. Use [USER TAKE: ...] markers instead of fabricating.
 
-Hashtag rules (strict — different per post type):
-- `opinion` and technical posts: ZERO hashtags. Do not add any hashtag line. The user prefers a clean ending with the closing question and nothing after.
-- `milestone` posts: up to 2 hashtags maximum, only community-relevant ones (#dataengineering, #geospatial, #postgis, #duckdb). Never #tech, #AI, generic hashtags, or stacks of 5+.
+Hashtag rules (strict — same for every post type):
+- Every post (opinion AND milestone) ends with 3–5 hashtags on their own line.
+- 2 fixed core hashtags on every post: #dataengineering #geospatial
+- 1–3 contextual hashtags chosen per topic from: #gis #postgis #duckdb #geoparquet #apacheiceberg #spatialdata #spatialSQL #datapipelines #cloudnativegeo #lakehouse
+- Banned: #tech, #AI, and all other generic tags. More than 5 total is a violation.
 
 Return JSON matching this EXACT shape — a single top-level object with a `candidates` array containing TWO entries. Use these field names exactly (no invented fields, no renaming "suggested_visual" to "visual"):
 

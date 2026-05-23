@@ -15,8 +15,10 @@ Critic's notes:
 Produce the revised draft addressing each note. Do not add personal experience the writer didn't include. Preserve any [USER TAKE: ...] markers. Keep within the style guide's length range.
 
 Apply these hashtag rules without exception:
-- If the post is an `opinion` or technical post (no personal milestone / role / project announcement), strip ALL hashtags. Zero is the target. No trailing hashtag line at all.
-- If the post is a `milestone` (announcing a new role, completed project, certification, public artifact), keep at most 2 hashtags, only community-relevant ones (#dataengineering, #geospatial, #postgis, #duckdb).
-- When in doubt, strip them. The user prefers clean endings.
+- Every post (opinion AND milestone) must end with 3–5 hashtags on their own line.
+- 2 fixed core hashtags on every post: #dataengineering #geospatial
+- 1–3 contextual hashtags chosen per topic from: #gis #postgis #duckdb #geoparquet #apacheiceberg #spatialdata #spatialSQL #datapipelines #cloudnativegeo #lakehouse
+- Banned: #tech, #AI, and all other generic tags. More than 5 total is a violation.
+- If the draft is missing hashtags or has wrong ones, add/replace them — do not strip.
 
 Return JSON matching the schema (revised_post_text + change_summary). No prose around the JSON.

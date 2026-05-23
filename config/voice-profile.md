@@ -168,13 +168,13 @@ These phrases / patterns get the draft auto-flagged by the critic:
 **`opinion`-post specific:**
 
 - Opens with "I'm excited to share..." / "As a data engineer..." / personal-announcement framing
-- More than 3 hashtags (target: 0 hashtags on opinion/technical posts)
+- Fewer than 3 or more than 5 hashtags, or missing the 2 fixed core hashtags (#dataengineering #geospatial)
 - Gratitude blocks — use `milestone` type for genuine thanks
 
 **`milestone`-post specific:**
 
 - Generic gratitude with no specifics ("for their support and guidance"). Thanks must name the person AND what they actually did.
-- More than 2 hashtags on milestone posts (style-guide cap is 5, but personal preference is ≤2)
+- Fewer than 3 or more than 5 hashtags, or missing the 2 fixed core hashtags (#dataengineering #geospatial)
 - Vague milestones with no concrete outcome (role title / project name / artifact link / number required)
 
 ## Things to *always* do
@@ -257,7 +257,7 @@ Banned Moves
 - "Grateful to announce" + 8 lines of self-praise + tagging 15 people (the explicitly cringeworthy pattern)
 - "I'm thrilled / honored / blessed" stacked-emotion openers
 - Generic gratitude with no specifics ("for their support and guidance")
-- Hashtag spam — max 2 on milestones, 0 on opinion/technical
+- Hashtag spam — every post needs 3–5 hashtags (2 fixed core #dataengineering #geospatial + 1–3 contextual); fewer than 3 or more than 5 is a violation
 - Closing CTAs that try to juice engagement ("Drop a 🔥", "Tag someone")
 - Bait questions ("What do YOU think? 👇", "Thoughts?")
 - All-lowercase aesthetic, forced sentence fragments, Random Title Case in body
@@ -276,7 +276,7 @@ Channel Notes
 - LinkedIn (primary):
   - Length: 800–1500 chars
   - Format: plain text, short paragraphs (1–3 lines), generous line breaks
-  - Hashtags: 0 on opinion/technical posts, up to 2 on milestone posts (community-relevant only — #dataengineering, #geospatial, #postgis, #duckdb; never #tech)
+  - Hashtags: 3–5 on every post — 2 fixed core (#dataengineering #geospatial) + 1–3 contextual from (#gis #postgis #duckdb #geoparquet #apacheiceberg #spatialdata #spatialSQL #datapipelines #cloudnativegeo #lakehouse); never #tech or other generic tags; max 5 total
   - Hook: first ~210 chars must work standalone (mobile see-more cutoff)
 - X (not currently published; future possibility):
   - Threads OK, single-tweet posts preferred when the take fits

@@ -14,7 +14,7 @@ supporting evidence. This is the workhorse type.
 
 - Rules below apply in full.
 - Hook must be opinionated or surprising; no "I'm excited to share" openers.
-- 0–3 hashtags.
+- 3–5 hashtags (2 fixed core + 1–3 contextual). See **## Hashtags** below.
 - No gratitude blocks, no thanking named people.
 - Forward-looking question at the end, not a CTA.
 
@@ -28,7 +28,7 @@ Relaxed rules (only these change vs. `opinion`):
 
 - Hook may open with "Some news.", "Sharing a milestone.", or similar — but NOT "I'm thrilled / honored / blessed". Excited is allowed *once*, not stacked.
 - May thank named individuals when the thanks is specific (their role + what they actually did), not generic ("my supervisor for mentoring me").
-- Up to 5 hashtags (still community-relevant; `#tech` etc. still banned).
+- 3–5 hashtags (2 fixed core + 1–3 contextual; same pool as `opinion`). See **## Hashtags** below.
 - Specific outcome / artifact required — what shipped, what role, what number. Vague milestones ("excited to start this journey") still fail.
 
 Everything else (no AI-isms, no hype phrases, no fabrication, one core claim,
@@ -56,9 +56,10 @@ numbers > adjectives) applies to BOTH types.
 
 ## Hashtags
 
-- 0–3 maximum.
-- Only community-relevant ones. `#dataengineering`, `#geospatial`, `#gis`, `#duckdb`, `#geoparquet` are fine. `#tech` is not.
-- Placed at the end, on their own line.
+- Every post (opinion AND milestone) ends with 3–5 hashtags on their own line.
+- **2 fixed core hashtags on every post:** `#dataengineering` `#geospatial`
+- **1–3 contextual hashtags** chosen per topic from: `#gis` `#postgis` `#duckdb` `#geoparquet` `#apacheiceberg` `#spatialdata` `#spatialSQL` `#datapipelines` `#cloudnativegeo` `#lakehouse`
+- Banned: generic tags (`#tech`, `#AI`, `#innovation`, etc.) and more than 5 total.
 
 ## Tone
 
@@ -89,14 +90,14 @@ numbers > adjectives) applies to BOTH types.
 
 - Opens with "I'm excited to share...", "As a data engineer...", or other personal-announcement framing.
 - Ends with "Thoughts?" or "Let me know what you think!" (lazy CTA).
-- Uses more than 3 hashtags.
+- Uses fewer than 3 or more than 5 hashtags, or omits the 2 fixed core hashtags.
 - Includes a gratitude block thanking named people (use `milestone` type for that).
 
 **For `milestone` posts specifically:**
 
 - The milestone is vague — no specific role title, project name, artifact link, or concrete outcome.
 - Thanks named people generically ("for their support and guidance") rather than specifically (their actual role + what they actually did).
-- Uses more than 5 hashtags.
+- Uses fewer than 3 or more than 5 hashtags, or omits the 2 fixed core hashtags.
 - Has no forward-looking element — just a celebration with no next step.
 
 ## Banned patterns (extended)
